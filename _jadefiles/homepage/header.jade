@@ -1,6 +1,6 @@
 #header
-  a(href="/"): img(src="/assets/img/arab-logo.jpg")
+  a(href="{{ '/' | prepend: site.baseurl | prepend: site.url }}"): img(src="{{ '/' | prepend: site.baseurl | prepend: site.url }}assets/img/arab-logo.jpg")
 
   .nav
     ul
-      li: a(href="/") Home
+      li: a(href="{{ '/' | prepend: site.baseurl | prepend: site.url }}") Home
