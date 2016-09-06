@@ -1,0 +1,15 @@
+/* MADE WITH LOVE */
+.mwL {
+  span {
+    color: red;
+    font-size: 20px;
+    animation: changeColor 5s infinite;
+    @keyframes changeColor {
+      0% {color: red;}
+      20% {color: blue;}
+      40% {color: green;}
+      60% {color: yellow;}
+      80% {color: purple;}
+    }
+  }
+}

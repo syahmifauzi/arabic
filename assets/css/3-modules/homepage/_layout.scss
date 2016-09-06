@@ -1,0 +1,83 @@
+// LAYOUTS
+body {
+  background: {
+    image: url('/assets/img/arab-bg.jpg');
+    repeat: repeat;
+    position: center center;
+    size: auto;
+  }
+  padding: 10px 5px;
+}
+
+.arabic-wrapper {
+  max-width: $large-breakpoint-width;
+  height: auto;
+  background-color: #fff;
+  margin: 10px auto;
+  padding: 10px;
+  border: 2px solid blue;
+  border-radius: 10px;
+}
+
+#header {
+  width: 100%;
+  text-align: center;
+  img {
+    max-width: 600px;
+    width: 100%;
+    max-height: 100%;
+    margin: 0 auto;
+  }
+  .nav {
+    font-size: 1.2em;
+    // background-color: lightblue;
+    ul {
+      padding: 0;
+    }
+    li {
+      list-style: none;
+      font-family: "Showcard Gothic", cursive, Arial;
+    }
+    a {
+      border-radius: 10px;
+      padding: 10px 15px;
+      display: inline-block;
+      border: 2px solid #e95950;
+      color: #3498db;
+      text-decoration: none;
+      transition: all 125ms ease-in-out;
+      &:hover {
+        color: #e95950;
+        border-color: #3498db;
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+#content {
+  text-align: center;
+  width: 100%;
+  box-sizing: border-box;
+  border: 2px solid purple;
+  border-radius: 10px;
+  padding: 5px;
+  margin: 0 0 10px 0;
+  h1, p {padding: 0; margin: 0;}
+}
+
+#footer {
+  @extend #content;
+  border-color: gray;
+  a {
+    color: #3498db;
+    text-decoration: none;
+    &:hover {
+      color: #e95950;
+      text-decoration: underline;
+    }
+  }
+}
+
+
+// CONTENTS

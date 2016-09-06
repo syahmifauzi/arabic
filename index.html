@@ -1,0 +1,13 @@
+---
+layout: default
+---
+
+
+<h1 class="project-heading">All Topics</h1>
+<div class="all-projects">
+{% for post in site.posts %}
+  <a href="{{ post.url }}">{% if post.arabic_title and post.title %}
+    <span class="arab">{{ post.arabic_title }}{% elsif post.title %}{{ post.title }}{% else %}{% endif %}</span>
+  </a>
+{% endfor %}
+</div><br>

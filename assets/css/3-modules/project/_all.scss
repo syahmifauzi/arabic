@@ -1,0 +1,25 @@
+#project-page {
+  text-align: center;
+  #section-wrap {
+    h2#project-header {
+      // padding: 10px;
+    }
+    #project-date {
+      // padding: 5px 0;
+    }
+    #project-content-wrapper {
+      // background-color: pink;
+      // padding: 5px 0;
+    }
+  }
+}
+
+@import "0-partials/variables";
+@import "0-partials/mixins";
+@import "0-partials/tables";
+@import "0-partials/classes";
+@import "0-partials/buttons";
+@import "0-partials/mwL";
+
+@import "1-modules/fiil-mudhori";
+@import "1-modules/dhomir";
