@@ -1,4 +1,4 @@
-{% if page.url != '/' %}
+{% if page.url != {{ '/' | prepend: site.baseurl | prepend: site.url }} %}
   <script>
     $(document).keydown(function(e){
       if (e.keyCode == 37) {
@@ -12,7 +12,7 @@
     });
   </script>
 {% endif %}
-{% if page.url == '/' %}
+{% if page.url == {{ '/' | prepend: site.baseurl | prepend: site.url }} %}
   <script>
     if (window.location.href === '{% if site.url %}{{ site.url }}{% else %}{{ site.local }}{% endif %}/#submitted') {
       $('#submitted').fadeIn();
