@@ -10,7 +10,7 @@
     <div class="arabic-wrapper">
       {% include homepage/header.html %}
 
-      <div id="content"{% if page.url == '{{ '/' | prepend: site.baseurl | prepend: site.url }}' %} class="homepage"{% endif %}>
+      <div id="content"{% if page.layout == 'default' %} class="homepage"{% endif %}>
         {{ content }}
       </div>
 
