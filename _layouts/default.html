@@ -16,12 +16,7 @@
 
       {% include homepage/footer.html %}
 
-      {% if page.url != '{{ '/' | prepend: site.baseurl | prepend: site.url }}' %}
-      <div class="disqus-wrapper">
-        <h3>Let's Disquss!!</h3>
-        {% include disqus-comments.html %}
-      </div>
-      {% endif %}
+      {% include disqus-comments.html %}
     </div>
 
     <noscript>Please enable JavaScript!</noscript>
