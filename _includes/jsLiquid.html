@@ -1,4 +1,4 @@
-{% if site.url and site.baseurl }} %}
+{% if page.url != {{ '' | prepend: site.baseurl | prepend: site.url }} %}
   <script>
     $(document).keydown(function(e){
       if (e.keyCode == 37) {
