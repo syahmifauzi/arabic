@@ -5,18 +5,18 @@
     {% include head.html %}
 
   </head>
-  <body style="background-image: url('{{ '' | prepend: site.baseurl | prepend: site.url }}assets/img/arab-bg.jpg');">
+  <body style="background-image: url('{{ '/' | prepend: site.baseurl | prepend: site.url }}assets/img/arab-bg.jpg');">
 
     <div class="arabic-wrapper">
       {% include homepage/header.html %}
 
-      <div id="content"{% if page.url == '{{ '' | prepend: site.baseurl | prepend: site.url }}' %} class="homepage"{% endif %}>
+      <div id="content"{% if page.url == '{{ '/' | prepend: site.baseurl | prepend: site.url }}' %} class="homepage"{% endif %}>
         {{ content }}
       </div>
 
       {% include homepage/footer.html %}
 
-      {% if page.url != '{{ '' | prepend: site.baseurl | prepend: site.url }}' %}
+      {% if page.url != '{{ '/' | prepend: site.baseurl | prepend: site.url }}' %}
       <div class="disqus-wrapper">
         <h3>Let's Disquss!!</h3>
         {% include disqus-comments.html %}
